@@ -60,6 +60,18 @@
             right: 0;
             border-radius: 3px 0 0 3px;
         }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
     </style>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
@@ -70,16 +82,36 @@
     <div style="text-align:left;">
         <h1>How Salmon Tamed The Fire</h1>
     </div>
-    <div style="text-align: left;">
+    <div style="text-align: left;display: none;">
         <audio controls style="height: 38px;width: 280px;">
             <source src="audio.ogg" type="audio/ogg">
             Your browser does not support the audio element.
         </audio>
     </div>
     <div>
-        <img class="feature-image responsive" src="salmon-ceremony-resized.jpg" alt="">
+        <img class="feature-image responsive" src="zoom-image.jpg" alt="">
     </div>
-    <div style="text-align: left;">
+    <div class="row">
+        <div class="column">
+            <img src="1.jpg" style="width:100%;">
+        </div>
+        <div class="column">
+            <img src="2.jpg" style="width:100%;">
+        </div>
+        <div class="column">
+            <img src="3.jpg" style="width:100%;">
+        </div>
+        <div class="column">
+            <img src="4.jpg" style="width:100%;">
+        </div>
+        <div class="column">
+            <img src="5.jpg" style="width:100%;">
+        </div>
+        <div class="column">
+            <img src="6.jpg" style="width:100%;">
+        </div>
+    </div>
+    <div style="text-align: left;display: none;">
         <div class="slideshow-container">
             <div class="mySlides">
                 <img src="salmon-smoking-station.jpg" style="width:100%">
